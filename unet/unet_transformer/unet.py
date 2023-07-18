@@ -3,7 +3,7 @@ from einops import rearrange
 
 from .bottleneck_layer import Bottleneck
 from .decoder import Up, SignleConv
-from ..vit import 
+from ..vit import ViT
 
 class TransUnet(nn.Module):
     def __init__(self, *, img_dim, in_channels, classes,
